@@ -4,14 +4,12 @@ format:
   html:
     css: [webex.css]
     include-after-body: [webex.js]
-    # 모바일 설정
-    touch: true
-    center: true
-    margin: 0.1
-    mobile: true
-    view-distance: 3
-    responsive: true
-    embed-resources: true
+    embed-resources: true 
+    toc: true
+    theme: cosmo
+    page-layout: full
+link-citations: true
+editor: visual
 ---
 
 ```{r setup, include = FALSE}

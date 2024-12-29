@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Letuin_lesson_PreTest"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: pre_test.qmd
+        text: Pre-Test1
+      - href: pre_test2.qmd
+        text: Pre-Test2
+      - href: pre_test3.qmd
+        text: Pre-Test3
+
+format: 
+  html:
+    css: [webex.css]
+    include-after-body: [webex.js]
+    embed-resources: true 
+    toc: true
+    theme: cosmo
+    page-layout: full
+link-citations: true
+editor: visual

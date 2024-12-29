@@ -4,14 +4,12 @@ format:
   html:
     css: [webex.css]
     include-after-body: [webex.js]
-    # 모바일 설정
-    touch: true
-    center: true
-    margin: 0.1
-    mobile: true
-    view-distance: 3
-    responsive: true
-    embed-resources: true
+    embed-resources: true 
+    toc: true
+    theme: cosmo
+    page-layout: full
+link-citations: true
+editor: visual
 ---
 
 ```{r setup, include = FALSE}
@@ -93,7 +91,7 @@ ai_tools <- c(
 
 23. AI 도구 사용시 주의할 점은? `r mcq(c("비용이 많이 든다", "시간이 오래 걸린다", answer = "생성된 정보의 사실 여부를 검증해야 한다", "컴퓨터가 좋아야 한다"))`
 
-24. 2024년 노벨 물리학상을 수상한 AI 분야의 선구자는 누구인가? r mcq(c("데미스 하사비스", "존 점퍼", answer = "제프리 힌턴", "데이비드 베이커"))`
+24. 2024년 노벨 물리학상을 수상한 AI 분야의 선구자는 누구인가? `r mcq(c("데미스 하사비스", "존 점퍼", answer = "제프리 힌턴", "데이비드 베이커"))`
 
 25. AI 윤리에서 중요한 것은? `r mcq(c("빠른 처리", "적은 비용", answer = "편향성 없는 판단", "많은 기능"))`
 :::

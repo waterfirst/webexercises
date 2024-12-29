@@ -1,143 +1,133 @@
 ---
-title: "Webexercises"
+title: "디스플레이 공정 데이터 분석 과정"
 format: 
   html:
     css: [webex.css]
     include-after-body: [webex.js]
     embed-resources: true 
+    toc: true
+    theme: cosmo
+    page-layout: full
+link-citations: true
+editor: visual
 ---
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
 library(webexercises)
 ```
 
-```{r, echo = FALSE, results='asis'}
-# Uncomment to change widget colours:
-#style_widgets(incorrect = "goldenrod", correct = "purple", highlight = "firebrick")
-```
+## 과정 소개
 
-This is a Web Exercise template created by the [#PsyTeachR team at the University of Glasgow](https://psyteachr.github.io), based on ideas from [Software Carpentry](https://software-carpentry.org/lessons/). This template shows how instructors can easily create interactive web documents that students can use in self-guided learning.
+이 과정은 디스플레이 제조 공정에서 발생하는 데이터를 분석하고 이를 통해 공정을 최적화하는 방법을 학습하는 과정입니다. R 프로그래밍을 기반으로 하며, 최신 AI 기술을 활용하여 더욱 효율적인 데이터 분석 방법을 익힐 수 있습니다.
 
-The `{webexercises}` package provides a number of functions that you use in [inline R code](https://github.com/rstudio/cheatsheets/raw/main/rmarkdown.pdf) or through code chunk options to create HTML widgets (text boxes, pull down menus, buttons that reveal hidden content). Examples are given below. Render this file to HTML to see how it works.
+### 학습 목표
 
-**NOTE: To use the widgets in the compiled HTML file, you need to have a JavaScript-enabled browser.**
+1. 데이터 분석의 기초 개념 이해
+2. R 프로그래밍 실무 능력 향상
+3. 디스플레이 공정 데이터 분석 실습
+4. AI 활용 데이터 분석 기법 습득
 
-## Example Questions
+### 주요 학습 내용
 
-### Fill-In-The-Blanks (`fitb()`)
+#### 1. 데이터 사이언스 기초
+- 통계의 기본 개념 이해
+- 데이터 시각화의 이해와 활용
+- 데이터 전처리 기법
 
-Create fill-in-the-blank questions using `fitb()`, providing the answer as the first argument.
+#### 2. R 프로그래밍 실습
+- R과 RStudio 환경 설정
+- 데이터 불러오기와 처리
+- 다양한 시각화 도구 활용
+- 통계 분석 패키지 활용
 
-- 2 + 2 is `r fitb(4)`
+#### 3. 디스플레이 공정 분석
+- 포토 공정 데이터 분석
+- 드라이 에칭 공정 분석
+- 스퍼터링 공정 분석
+- 공정 간 상관관계 분석
 
-You can also create these questions dynamically, using variables from your R session.
+#### 4. AI 활용 데이터 분석
+- AI 기반 코드 변환
+- 프롬프트 엔지니어링
+- AI 활용 데이터 분석 자동화
+- AI 윤리와 한계 이해
 
-```{r}
-x <- sample(2:8, 1)
-```
+## 사전 테스트 안내
 
-- The square root of `r x^2` is: `r fitb(x)`
+본 과정을 시작하기 전에 수강생들의 기초 지식을 파악하고자 사전 테스트를 준비했습니다. 테스트는 총 3개의 섹션으로 구성되어 있습니다.
 
-The blanks are case-sensitive; if you don't care about case, use the argument `ignore_case = TRUE`.
+### Pre-Test 1: 기초 통계와 AI 개념
+- 기본적인 통계 개념
+- 데이터 시각화 이해
+- AI와 관련된 기초 지식
+[Pre-Test 1 바로가기](pre_test1.qmd)
 
-- What is the letter after D? `r fitb("E", ignore_case = TRUE)`
+### Pre-Test 2: R 프로그래밍 기초
+- R 언어의 기본 문법
+- 데이터 처리 방법
+- 패키지 활용 방법
+[Pre-Test 2 바로가기](pre_test2.qmd)
 
-If you want to ignore differences in whitespace use, use the argument `ignore_ws = TRUE` (which is the default) and include spaces in your answer anywhere they could be acceptable.
+### Pre-Test 3: 디스플레이 공정 이해
+- 포토 공정의 이해
+- 에칭 공정의 이해
+- 스퍼터링 공정의 이해
+[Pre-Test 3 바로가기](pre_test3.qmd)
 
-- How do you load the tidyverse package? `r fitb(c("library( tidyverse )", "library( \"tidyverse\" )", "library( 'tidyverse' )"), ignore_ws = TRUE, width = "20")`
+## 학습 안내
 
-You can set more than one possible correct answer by setting the answers as a vector.
+::: {.callout-note}
+### 효과적인 학습을 위한 조언
 
-- Type a vowel: `r fitb(c("A", "E", "I", "O" , "U"), ignore_case = TRUE)`
-
-You can use regular expressions to test answers against more complex rules.
-
-- Type any 3 letters: `r fitb("^[a-zA-Z]{3}$", width = 3, regex = TRUE)`
-
-### Multiple Choice (`mcq()`)
-
-- "Never gonna give you up, never gonna: `r mcq(c("let you go", "turn you down", "run away", answer = "let you down"))`"
-- "I `r mcq(c(answer = "bless the rains", "guess it rains", "sense the rain"))` down in Africa" -Toto
-
-### True or False (`torf()`)
-
-- True or False? You can permute values in a vector using `sample()`. `r torf(TRUE)`
-
-### Longer MCQs (`longmcq()`)
-
-When your answers are very long, sometimes a drop-down select box gets formatted oddly. You can use `longmcq()` to deal with this. Since the answers are long, It's probably best to set up the options inside an R chunk with `echo=FALSE`. 
-
-**What is a p-value?**
-
-```{r}
-opts_p <- c(
-   "the probability that the null hypothesis is true",
-   answer = "the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true",
-   "the probability of making an error in your conclusion"
-)
-```
-
-`r longmcq(opts_p)`
-
-**What is true about a 95% confidence interval of the mean?**
-
-```{r}
-# use sample() to randomise the order
-opts_ci <- sample(c(
-  answer = "if you repeated the process many times, 95% of intervals calculated in this way contain the true mean",
-  "there is a 95% probability that the true mean lies within this range",
-  "95% of the data fall within this range"
-))
-```
-
-`r longmcq(opts_ci)`
-
-## Checked sections
-
-Create sections with the class `webex-check` to add a button that hides feedback until it is pressed. Add the class `webex-box` to draw a box around the section (or use your own styles).
-
-::: {.webex-check .webex-box}
-
-I am going to learn a lot: `r torf(TRUE)`
-
-```{r, results='asis'}
-opts <- c(
-   "the probability that the null hypothesis is true",
-   answer = "the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true",
-   "the probability of making an error in your conclusion"
-)
-
-cat("What is a p-value?", longmcq(opts))
-```
-
+- 사전 테스트는 평가의 목적이 아닌 학습 방향 설정을 위한 것입니다.
+- 모르는 문제가 있더라도 걱정하지 마세요. 과정을 통해 모든 내용을 학습할 수 있습니다.
+- 실습 위주의 학습이 진행되므로, 컴퓨터와 인터넷 환경을 미리 준비해주세요.
 :::
 
+## 준비사항
 
+1. **필수 소프트웨어 설치**
+   - R 최신 버전
+   - RStudio 데스크톱 버전
+   - Git (선택사항)
 
-## Hidden solutions and hints
+2. **추천 학습 자료**
+   - R for Data Science (온라인 무료 서적)
+   - 디스플레이 공학 개론
+   - AI 활용 가이드
 
-You can fence off a solution area that will be hidden behind a button using `hide()` before the solution and `unhide()` after, each as inline R code.  Pass the text you want to appear on the button to the `hide()` function.
-
-If the solution is a code chunk, instead of using `hide()` and `unhide()`, simply set the `webex.hide` chunk option to TRUE, or set it to the string you wish to display on the button.
-
-**Recreate the scatterplot below, using the built-in `cars` dataset.**
-
-```{r}
-with(cars, plot(speed, dist))
-```
-
-
-`r hide("I need a hint")`
-
-See the documentation for `plot()` (`?plot`)
-
+`r hide("수강 전 확인사항")`
+- R과 RStudio가 정상적으로 설치되었는지 확인
+- 인터넷 브라우저는 최신 버전을 사용
+- 기본적인 컴퓨터 사용법 숙지
+- 학습을 위한 충분한 시간 확보
 `r unhide()`
 
-<!-- note: you could also just set webex.hide to TRUE -->
+## 과정 특징
 
-```{r, echo = TRUE, eval = FALSE}
-#| webex.hide: "Click here to see the solution"
-plot(cars$speed, cars$dist)
-```
+1. **실무 중심 교육**
+   - 실제 공정 데이터 활용
+   - 현장에서 발생하는 문제 해결
+   - 실무자들의 경험 공유
+
+2. **AI 활용 능력 향상**
+   - 최신 AI 도구 활용법 학습
+   - 효율적인 코드 작성 방법
+   - 데이터 분석 자동화 기법
+
+3. **맞춤형 학습**
+   - 수강생의 수준에 따른 맞춤 지도
+   - 단계별 심화 학습 가능
+   - 실시간 질의응답 지원
+
+## 강의 일정
+
+| 주차 | 주제 | 실습 내용 |
+|------|------|-----------|
+| 1-2  | 기초 통계와 R 프로그래밍 | R 기본 문법, 데이터 처리 |
+| 3-4  | 데이터 시각화 | ggplot2, 인터랙티브 그래프 |
+| 5-6  | 포토 공정 분석 | 공정 변수 분석, 품질 관리 |
+| 7-8  | 에칭 공정 분석 | 플라즈마 공정 최적화 |
+| 9-10 | 스퍼터링 공정 분석 | 박막 특성 분석 |
+| 11-12| AI 활용 데이터 분석 | 자동화, 예측 모델 개발 |
