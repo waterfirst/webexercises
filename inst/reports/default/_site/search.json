@@ -2,246 +2,50 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "디스플레이 공정 데이터 분석 과정",
+    "title": "디스플레이 데이터 분석 사전테스트",
     "section": "",
-    "text": "이 과정은 디스플레이 제조 공정에서 발생하는 데이터를 분석하고 이를 통해 공정을 최적화하는 방법을 학습하는 과정입니다. R 프로그래밍을 기반으로 하며, 최신 AI 기술을 활용하여 더욱 효율적인 데이터 분석 방법을 익힐 수 있습니다.\n\n\n\n데이터 분석의 기초 개념 이해\nR 프로그래밍 실무 능력 향상\n디스플레이 공정 데이터 분석 실습\nAI 활용 데이터 분석 기법 습득\n\n\n\n\n\n\n\n통계의 기본 개념 이해\n데이터 시각화의 이해와 활용\n데이터 전처리 기법\n\n\n\n\n\nR과 RStudio 환경 설정\n데이터 불러오기와 처리\n다양한 시각화 도구 활용\n통계 분석 패키지 활용\n\n\n\n\n\n포토 공정 데이터 분석\n드라이 에칭 공정 분석\n스퍼터링 공정 분석\n공정 간 상관관계 분석\n\n\n\n\n\nAI 기반 코드 변환\n프롬프트 엔지니어링\nAI 활용 데이터 분석 자동화\nAI 윤리와 한계 이해"
+    "text": "OLED의 기본 구조에서 발광이 일어나는 층은? 전자주입층정공주입층발광층전극층\n진공 증착 공정에서 pressure(진공도)의 단위는? Pa℃rpmg\nOLED 발광 재료의 종류가 아닌 것은? 형광인광등방광열발광\n클린룸의 청정도를 나타내는 단위는? ClassDegreeLevelGrade\nOLED 공정에서 산소와 수분을 차단하는 이유는? 발광효율 향상수명 향상해상도 향상휘도 향상"
   },
   {
-    "objectID": "index.html#example-questions",
-    "href": "index.html#example-questions",
-    "title": "Webexercises",
-    "section": "Example Questions",
-    "text": "Example Questions\n\nFill-In-The-Blanks (fitb())\nCreate fill-in-the-blank questions using fitb(), providing the answer as the first argument.\n\n2 + 2 is \n\nYou can also create these questions dynamically, using variables from your R session.\n\nThe square root of 4 is: \n\nThe blanks are case-sensitive; if you don’t care about case, use the argument ignore_case = TRUE.\n\nWhat is the letter after D? \n\nIf you want to ignore differences in whitespace use, use the argument ignore_ws = TRUE (which is the default) and include spaces in your answer anywhere they could be acceptable.\n\nHow do you load the tidyverse package? \n\nYou can set more than one possible correct answer by setting the answers as a vector.\n\nType a vowel: \n\nYou can use regular expressions to test answers against more complex rules.\n\nType any 3 letters: \n\n\n\nMultiple Choice (mcq())\n\n“Never gonna give you up, never gonna: let you goturn you downrun awaylet you down”\n“I bless the rainsguess it rainssense the rain down in Africa” -Toto\n\n\n\nTrue or False (torf())\n\nTrue or False? You can permute values in a vector using sample(). TRUEFALSE\n\n\n\nLonger MCQs (longmcq())\nWhen your answers are very long, sometimes a drop-down select box gets formatted oddly. You can use longmcq() to deal with this. Since the answers are long, It’s probably best to set up the options inside an R chunk with echo=FALSE.\nWhat is a p-value?\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion\n\nWhat is true about a 95% confidence interval of the mean?\n\n if you repeated the process many times, 95% of intervals calculated in this way contain the true mean there is a 95% probability that the true mean lies within this range 95% of the data fall within this range"
-  },
-  {
-    "objectID": "index.html#checked-sections",
-    "href": "index.html#checked-sections",
-    "title": "Webexercises",
-    "section": "Checked sections",
-    "text": "Checked sections\nCreate sections with the class webex-check to add a button that hides feedback until it is pressed. Add the class webex-box to draw a box around the section (or use your own styles).\n\nI am going to learn a lot: TRUEFALSE\nWhat is a p-value?\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion"
-  },
-  {
-    "objectID": "index.html#hidden-solutions-and-hints",
-    "href": "index.html#hidden-solutions-and-hints",
-    "title": "Webexercises",
-    "section": "Hidden solutions and hints",
-    "text": "Hidden solutions and hints\nYou can fence off a solution area that will be hidden behind a button using hide() before the solution and unhide() after, each as inline R code. Pass the text you want to appear on the button to the hide() function.\nIf the solution is a code chunk, instead of using hide() and unhide(), simply set the webex.hide chunk option to TRUE, or set it to the string you wish to display on the button.\nRecreate the scatterplot below, using the built-in cars dataset.\n\n\n\n\n\n\n\n\n\n\n\nI need a hint\n\nSee the documentation for plot() (?plot)\n\n\n\n\n\nClick here to see the solution\n\nplot(cars$speed, cars$dist)"
-  },
-  {
-    "objectID": "pre_test3.html",
-    "href": "pre_test3.html",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 3",
+    "objectID": "index.html#기초-난이도-문제",
+    "href": "index.html#기초-난이도-문제",
+    "title": "디스플레이 데이터 분석 사전테스트",
     "section": "",
-    "text": "데이터 사이언스의 세 가지 영역이 아닌 것은? StatisticsDomain KnowledgeWeb DesignProgramming\nR 언어에서 첫번째 열을 선택할 때는 0을 쓰는가? 1을 쓰는가? \nR과 Python 중 통계 분석에 더 특화된 언어는? RPython\n\n\nR의 주요 장점은 무엇인가요?\n\n 웹 개발의 용이성 통계 분석과 시각화의 일관성 게임 개발의 편리성 운영체제 제어의 편리성"
+    "text": "OLED의 기본 구조에서 발광이 일어나는 층은? 전자주입층정공주입층발광층전극층\n진공 증착 공정에서 pressure(진공도)의 단위는? Pa℃rpmg\nOLED 발광 재료의 종류가 아닌 것은? 형광인광등방광열발광\n클린룸의 청정도를 나타내는 단위는? ClassDegreeLevelGrade\nOLED 공정에서 산소와 수분을 차단하는 이유는? 발광효율 향상수명 향상해상도 향상휘도 향상"
   },
   {
-    "objectID": "pre_test3.html#데이터-사이언스와-프로그래밍-언어-기초",
-    "href": "pre_test3.html#데이터-사이언스와-프로그래밍-언어-기초",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 3",
-    "section": "",
-    "text": "데이터 사이언스의 세 가지 영역이 아닌 것은? StatisticsDomain KnowledgeWeb DesignProgramming\nR 언어에서 첫번째 열을 선택할 때는 0을 쓰는가? 1을 쓰는가? \nR과 Python 중 통계 분석에 더 특화된 언어는? RPython\n\n\nR의 주요 장점은 무엇인가요?\n\n 웹 개발의 용이성 통계 분석과 시각화의 일관성 게임 개발의 편리성 운영체제 제어의 편리성"
+    "objectID": "index.html#중급-난이도-문제",
+    "href": "index.html#중급-난이도-문제",
+    "title": "디스플레이 데이터 분석 사전테스트",
+    "section": "중급 난이도 문제",
+    "text": "중급 난이도 문제\n\n\n포토레지스트 도포 시 두께에 영향을 주는 요인은? 점도회전속도온도이상 모두\n스퍼터링에서 증착률을 높이는 방법이 아닌 것은? 파워 증가압력 감소타겟-기판 거리 감소기판 온도 상승\n\n\nOLED 생산의 주요 수율 저하 요인은?\n\n 파티클 정렬불량 막질불균일 이상 모두\n\n정공주입층(HIL)의 역할이 아닌 것은? 정공 주입에너지 장벽 감소전자 차단발광 효율 증가\n진공펌프의 종류가 아닌 것은? 로터리부스터터보컨베이어"
   },
   {
-    "objectID": "pre_test3.html#r-프로그래밍-환경",
-    "href": "pre_test3.html#r-프로그래밍-환경",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 3",
-    "section": "R 프로그래밍 환경",
-    "text": "R 프로그래밍 환경\n\n\nR에서 패키지를 설치하는 명령어는? \nR에서 패키지를 불러오는 명령어는? \ntidyverse의 dplyr에 포함되지 않는 함수? filtermutateplotgroup_by\nR에서 데이터프레임의 구조를 확인하는 함수는?"
+    "objectID": "index.html#고급-난이도-문제",
+    "href": "index.html#고급-난이도-문제",
+    "title": "디스플레이 데이터 분석 사전테스트",
+    "section": "고급 난이도 문제",
+    "text": "고급 난이도 문제\n\n\nOLED 유기물 증착 시 효율이 저하되는 원인이 아닌 것은? 새도우 효과크로스토크오염기판 평탄도\n이방성 건식 식각에서 중요한 요소가 아닌 것은? 이온 에너지라디칼 밀도챔버 부피바이어스 전압\nOLED 발광층 호스트 재료의 조건이 아닌 것은? 높은 전하이동도넓은 밴드갭좋은 열안정성높은 일함수\nOLED의 외부양자효율에 영향을 주지 않는 것은? 내부양자효율광추출효율전하균형기판 투과도\n증착 최적화 인자가 아닌 것은? 증착속도기판온도소스온도대기압"
   },
   {
-    "objectID": "pre_test3.html#데이터-처리와-tidyverse",
-    "href": "pre_test3.html#데이터-처리와-tidyverse",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 3",
-    "section": "데이터 처리와 Tidyverse",
-    "text": "데이터 처리와 Tidyverse\n\n\ndplyr 패키지에서 행을 필터링하는 함수는? \n다음 중 데이터 결합(join)의 종류가 아닌 것은? left_joinright_joincenter_joininner_join\n\n\nR에서 CSV 파일 읽기 함수는?\n\n open read.csv scan load\n\nNA 값을 제거하는 함수는?"
+    "objectID": "index.html#디스플레이-산업-이해",
+    "href": "index.html#디스플레이-산업-이해",
+    "title": "디스플레이 데이터 분석 사전테스트",
+    "section": "디스플레이 산업 이해",
+    "text": "디스플레이 산업 이해\n\n\nOLED 디스플레이의 시장 성장을 견인하는 주요 응용분야는? 노트북TV스마트폰모니터\nOLED 디스플레이의 단점이 아닌 것은? 수명번인소비전력시야각\nOLED 수명시험 항목이 아닌 것은? 고온동작고온고습저온동작진동\nOLED 특성 평가 항목이 아닌 것은? 휘도색순도수명경도\n차세대 디스플레이 기술이 아닌 것은? 마이크로LED퀀텀닷CD-LCD투명디스플레이"
   },
   {
-    "objectID": "pre_test3.html#데이터-시각화",
-    "href": "pre_test3.html#데이터-시각화",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 3",
-    "section": "데이터 시각화",
-    "text": "데이터 시각화\n\n\nggplot2에서 산점도를 그리는 함수는? \n다음 중 밀도 그래프를 그리는 함수는? geom_densitygeom_densegeom_distgeom_dens\n그래프를 결합하는 패키지의 이름은?"
+    "objectID": "index.html#공정-데이터-분석",
+    "href": "index.html#공정-데이터-분석",
+    "title": "디스플레이 데이터 분석 사전테스트",
+    "section": "공정 데이터 분석",
+    "text": "공정 데이터 분석\n\n\n공정 데이터에서 이상치를 판단하는 가장 일반적인 방법은? 평균값 비교표준편차 활용중앙값 비교최빈값 활용\n공정 수율 데이터 분석에 가장 적합한 그래프는? 파이차트산점도관리도히스토그램\n공정능력지수(Cp)가 높다는 것은? 수율이 낮다편차가 크다산포가 작다불량이 많다\n공정 관리도 분석에서 이상 패턴이 아닌 것은? 트렌드주기성혼합랜덤성\n다구찌 실험계획법의 특징이 아닌 것은? 직교배열표 사용SN비 활용교호작용 중시잡음인자 고려"
   },
   {
-    "objectID": "pre_test3.html#포토-공정의-이해",
-    "href": "pre_test3.html#포토-공정의-이해",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 3",
-    "section": "포토 공정의 이해",
-    "text": "포토 공정의 이해\n\n\n포지티브 포토레지스트의 특징은? 노광부가 현상액에 녹지 않음노광부가 현상액에 녹음노광과 무관하게 녹음전혀 녹지 않음\n포토레지스트 슬릿 코팅 시 두께를 결정하는 주요 변수는? 온도토출량시간습도\n노광 공정에서 CD(Critical Dimension)에 영향을 주는 요소가 아닌 것은? 노광량초점거리마스크 패턴습도\nOLED의 PDL 공정에서 가장 중요한 것은? 두께 균일도테이퍼 각도현상 속도표면 거칠기\n포토레지스트 경화(Hard bake) 공정의 목적은? 두께 증가패턴 형성내화학성 향상접착력 감소"
-  },
-  {
-    "objectID": "pre_test3.html#드라이-에칭-공정",
-    "href": "pre_test3.html#드라이-에칭-공정",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 3",
-    "section": "드라이 에칭 공정",
-    "text": "드라이 에칭 공정\n\n\n등방성 에칭의 특징은? 모든 방향으로 동일한 식각률수직 방향 식각만 발생수평 방향 식각만 발생식각이 발생하지 않음\nICP 에칭의 장점이 아닌 것은? 고밀도 플라즈마낮은 기판 손상낮은 설비 비용독립적인 이온 에너지 제어\n다음 중 비등방성 에칭을 얻기 위한 조건은? 높은 공정 압력낮은 공정 압력높은 온도낮은 RF 파워\nECCP와 ICP의 주요 차이점은? 가스 종류챔버 재질플라즈마 생성 방식기판 온도\n드라이 에칭의 품질 관리 포인트가 아닌 것은? 식각률균일도선택비설비 수"
-  },
-  {
-    "objectID": "pre_test3.html#스퍼터링-공정",
-    "href": "pre_test3.html#스퍼터링-공정",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 3",
-    "section": "스퍼터링 공정",
-    "text": "스퍼터링 공정\n\n\n스퍼터링의 기본 원리는? 화학 반응열 증발물리적 충돌전기 분해\nRotary 스퍼터링의 장점은? 높은 증착 속도대면적 균일도낮은 설비 비용높은 타겟 효율\n박막의 조직을 치밀하게 만드는 공정 조건은? 높은 공정 압력낮은 RF 파워기판 바이어스 적용높은 기판 온도\n스퍼터링 공정에서 증착률에 가장 큰 영향을 미치는 변수는? 기판 온도RF 파워기판 회전 속도진공도\n박막의 응력을 감소시키는 방법은? 파워 증가압력 감소공정 압력 최적화기판 온도 감소"
-  },
-  {
-    "objectID": "pre_test3.html#힌트와-해설",
-    "href": "pre_test3.html#힌트와-해설",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 3",
+    "objectID": "index.html#힌트와-해설",
+    "href": "index.html#힌트와-해설",
+    "title": "디스플레이 데이터 분석 사전테스트",
     "section": "힌트와 해설",
-    "text": "힌트와 해설\n\n\n데이터 사이언스와 프로그래밍 언어 기초 힌트\n\n\n데이터 사이언스의 세 가지 영역: 통계, 프로그래밍, 도메인 지식\nR은 통계 분석을 위해 만들어진 언어입니다\nS 언어는 R의 모태가 되는 언어입니다\n\n\n\n\nR 프로그래밍 환경 힌트\n\n\ninstall.packages는 CRAN에서 패키지를 설치합니다\nsetwd로 작업 디렉토리를 설정할 수 있습니다\ntidyverse는 데이터 과학을 위한 패키지 모음입니다\n\n\n\n\n데이터 처리와 Tidyverse 힌트\n\n\ndplyr의 주요 동사: filter, select, mutate, summarize, arrange\njoin 함수들은 SQL의 조인과 유사합니다\ntidyverse는 read_csv를 권장합니다\n\n\n\n\n데이터 시각화 힌트\n\n\nggplot2는 그래프를 레이어로 쌓아갑니다\ngeom_density는 분포를 부드러운 곡선으로 표현합니다\npatchwork는 여러 그래프를 조합할 수 있습니다\n\n\n\n\n포토 공정 힌트\n\n\n포토레지스트의 종류에 따라 현상 특성이 다릅니다\n코팅 두께는 rpm의 제곱근에 반비례합니다\nCD는 노광량과 초점 거리에 민감합니다\n\n\n\n\n드라이 에칭 힌트\n\n\n등방성은 모든 방향으로 동일한 식각을 의미합니다\n플라즈마 밀도와 이온 에너지는 독립적으로 제어 가능합니다\n압력이 낮을수록 비등방성이 증가합니다\n\n\n\n\n스퍼터링 힌트\n\n\n스퍼터링은 운동량 전달 현상입니다\nRF 파워는 증착률과 비례합니다\n공정 압력은 평균 자유행정과 관련됩니다"
-  },
-  {
-    "objectID": "pre_test.html",
-    "href": "pre_test.html",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 1",
-    "section": "",
-    "text": "다음 중 평균(Mean)을 구하는 방법은? 모든 값을 더한 후 개수로 나눈다가장 작은 값과 큰 값의 중간가장 많이 나온 값첫 값과 마지막 값의 중간\n중앙값(Median)은 어떤 값인가요? 모든 값의 합을 개수로 나눈 값데이터를 순서대로 배열했을 때 가운데 있는 값가장 많이 나타나는 값가장 큰 값과 작은 값의 차이\n표준편차가 크다는 것은 무엇을 의미하나요? 평균이 크다중앙값이 크다데이터가 평균에서 멀리 퍼져있다데이터의 개수가 많다\n다음 중 이상치(Outlier)를 찾는 가장 일반적인 방법은? 평균보다 큰 값중앙값보다 큰 값상자그림에서 울타리를 벗어난 값최댓값과 최솟값\nNA 값과 Inf의 차이는 무엇인가요? NA는 결측값, Inf는 무한대를 의미NA는 0, Inf는 1을 의미NA는 음수, Inf는 양수를 의미NA는 문자, Inf는 숫자를 의미"
-  },
-  {
-    "objectID": "pre_test.html#기초-통계-개념",
-    "href": "pre_test.html#기초-통계-개념",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 1",
-    "section": "",
-    "text": "다음 중 평균(Mean)을 구하는 방법은? 모든 값을 더한 후 개수로 나눈다가장 작은 값과 큰 값의 중간가장 많이 나온 값첫 값과 마지막 값의 중간\n중앙값(Median)은 어떤 값인가요? 모든 값의 합을 개수로 나눈 값데이터를 순서대로 배열했을 때 가운데 있는 값가장 많이 나타나는 값가장 큰 값과 작은 값의 차이\n표준편차가 크다는 것은 무엇을 의미하나요? 평균이 크다중앙값이 크다데이터가 평균에서 멀리 퍼져있다데이터의 개수가 많다\n다음 중 이상치(Outlier)를 찾는 가장 일반적인 방법은? 평균보다 큰 값중앙값보다 큰 값상자그림에서 울타리를 벗어난 값최댓값과 최솟값\nNA 값과 Inf의 차이는 무엇인가요? NA는 결측값, Inf는 무한대를 의미NA는 0, Inf는 1을 의미NA는 음수, Inf는 양수를 의미NA는 문자, Inf는 숫자를 의미"
-  },
-  {
-    "objectID": "pre_test.html#기본-그래프의-이해",
-    "href": "pre_test.html#기본-그래프의-이해",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 1",
-    "section": "기본 그래프의 이해",
-    "text": "기본 그래프의 이해\n\n\n두 변수 간의 관계를 볼 때 가장 적합한 그래프는? 산점도(Scatter plot)원그래프(Pie chart)막대그래프(Bar chart)상자그림(Box plot)\n데이터의 분포를 확인하기 좋은 그래프는? 산점도히스토그램원그래프선그래프\n범주별 빈도를 비교할 때 사용하는 그래프는? 산점도히스토그램막대그래프선그래프\nViolin plot은 어떤 그래프와 유사한가요? 산점도상자그림(Box plot)막대그래프원그래프\nHeat map은 무엇을 표현하기에 적합한가요? 시간에 따른 변화범주별 비교두 변수의 교차 빈도나 강도단순한 수치 비교"
-  },
-  {
-    "objectID": "pre_test.html#현대의-ai-이해하기",
-    "href": "pre_test.html#현대의-ai-이해하기",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 1",
-    "section": "현대의 AI 이해하기",
-    "text": "현대의 AI 이해하기\n\n\nGPT의 뜻은 무엇인가요? General Programming ToolGenerative Pre-trained TransformerGlobal Processing TechnologyGeneral Purpose Text\nLLM은 무슨 약자인가요? \nAI의 할루시네이션(Hallucination)이란? AI가 이미지를 만드는 것AI가 음성을 인식하는 것AI가 사실이 아닌 정보를 만들어내는 것AI가 계산을 하는 것\n\n\nClaude의 주요 특징은?\n\n 이미지 생성 특화 코드 생성 특화 대화와 분석에 특화 음성 인식 특화\n\n다음 중 구글에서 개발한 AI는? ClaudeGPTGeminiChatGPT"
-  },
-  {
-    "objectID": "pre_test.html#데이터의-기초-개념",
-    "href": "pre_test.html#데이터의-기초-개념",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 1",
-    "section": "데이터의 기초 개념",
-    "text": "데이터의 기초 개념\n\n\n평균과 중앙값이 많이 다르다면 무엇을 의미할 수 있나요? 데이터가 너무 적다데이터가 한쪽으로 치우쳐있다데이터가 너무 많다데이터가 잘못됐다\n다음 중 가장 큰 수는? 평균중앙값최댓값최빈값\n분산은 무엇을 의미하나요? 데이터의 크기데이터가 퍼진 정도데이터의 순서데이터의 개수\n상관관계가 0에 가깝다는 것은 무슨 의미인가요? 강한 양의 관계강한 음의 관계두 변수 간에 선형관계가 없다완벽한 관계\n다음 중 질적 데이터는? 키몸무게나이혈액형"
-  },
-  {
-    "objectID": "pre_test.html#ai의-활용",
-    "href": "pre_test.html#ai의-활용",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 1",
-    "section": "AI의 활용",
-    "text": "AI의 활용\n\n\nChatGPT를 만든 회사? 엔트로픽오픈AI구글마이크로소프트\nPerplexity AI의 특징은? 이미지 생성코드 실행실시간 검색 기반 답변음성 변환\nAI 도구 사용시 주의할 점은? 비용이 많이 든다시간이 오래 걸린다생성된 정보의 사실 여부를 검증해야 한다컴퓨터가 좋아야 한다\n2024년 노벨 물리학상을 수상한 AI 분야의 선구자는 누구인가? 데미스 하사비스존 점퍼제프리 힌턴데이비드 베이커\nAI 윤리에서 중요한 것은? 빠른 처리적은 비용편향성 없는 판단많은 기능"
-  },
-  {
-    "objectID": "pre_test.html#기초-데이터-분석",
-    "href": "pre_test.html#기초-데이터-분석",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 1",
-    "section": "기초 데이터 분석",
-    "text": "기초 데이터 분석\n\n\n다음 중 가장 기본적인 데이터 정제 방법은? 모델 만들기결측치 처리하기그래프 그리기보고서 작성하기\n데이터 시각화의 목적이 아닌 것은? 패턴 발견관계 파악데이터 수정이상치 확인\n막대그래프와 히스토그램의 차이는? 색상의 차이범주형 vs 연속형 데이터크기의 차이모양의 차이\n상자그림(Box plot)에서 볼 수 없는 것은? 중앙값사분위수이상치평균\n데이터 분석의 첫 단계로 가장 적절한 것은? 결론 도출모델 생성데이터 탐색보고서 작성"
-  },
-  {
-    "objectID": "pre_test.html#힌트와-해설",
-    "href": "pre_test.html#힌트와-해설",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 1",
-    "section": "힌트와 해설",
-    "text": "힌트와 해설\n\n\n기초 통계 개념 힌트\n\n\n평균은 모든 값의 합을 개수로 나눈 것입니다\n중앙값은 데이터를 정렬했을 때 가운데 있는 값입니다\n표준편차는 데이터가 평균에서 얼마나 떨어져 있는지를 나타냅니다\nNA는 결측치(Missing Value)를 의미합니다\n\n\n\n\n기본 그래프 힌트\n\n\n산점도는 두 변수의 관계를 점으로 표현합니다\n히스토그램은 데이터의 분포를 보여줍니다\n막대그래프는 범주별 비교에 좋습니다\nViolin plot은 분포의 형태를 보여줍니다\n\n\n\n\nAI 개념 힌트\n\n\nGPT는 텍스트를 생성하는 AI 모델입니다\nLLM은 대규모 언어 모델을 의미합니다\n할루시네이션은 AI가 잘못된 정보를 생성하는 현상입니다\n\n\n\n\n데이터 기초 개념 힌트\n\n\n평균과 중앙값의 차이는 데이터의 치우침을 나타냅니다\n분산은 데이터가 얼마나 퍼져있는지를 보여줍니다\n상관관계는 두 변수 간의 관계를 나타냅니다\n\n\n\n\nAI 활용 힌트\n\n\n각 AI 도구는 특화된 기능이 있습니다\nAI는 완벽하지 않으므로 검증이 필요합니다\nAI 윤리는 매우 중요한 고려사항입니다\n\n\n\n\n데이터 분석 힌트\n\n\n데이터 정제는 분석의 기초입니다\n시각화는 데이터를 이해하기 쉽게 만듭니다\n그래프는 목적에 맞게 선택해야 합니다"
-  },
-  {
-    "objectID": "pre_test2.html",
-    "href": "pre_test2.html",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 2",
-    "section": "",
-    "text": "R 언어의 창시자는? 귀도 반 로섬로스 이하카와 로버트 젠틀맨제임스 고슬링래리 월\nPython 언어가 추구하는 철학으로 가장 적절한 것은? 복잡한 것이 단순한 것보다 낫다단순한 것이 복잡한 것보다 낫다많은 방법이 하나의 방법보다 낫다암시적인 것이 명시적인 것보다 낫다\nR 언어가 통계 분석에 강점을 보이는 이유는? 웹 개발에 특화되어서게임 개발에 특화되어서통계학자들이 만든 언어이기 때문에시스템 프로그래밍에 특화되어서\nPython이 데이터 분석에 널리 사용되는 이유는? 무료이기 때문에쉽고 범용적인 문법과 풍부한 라이브러리실행 속도가 가장 빠르기 때문에메모리를 가장 적게 사용하기 때문에\n현대 데이터 분석에서 R과 Python의 관계는? R이 Python을 대체한다Python이 R을 대체한다각자의 장단점을 가지고 상호보완적으로 사용된다서로 호환되지 않는다"
-  },
-  {
-    "objectID": "pre_test2.html#프로그래밍-언어의-역사와-특징",
-    "href": "pre_test2.html#프로그래밍-언어의-역사와-특징",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 2",
-    "section": "",
-    "text": "R 언어의 창시자는? 귀도 반 로섬로스 이하카와 로버트 젠틀맨제임스 고슬링래리 월\nPython 언어가 추구하는 철학으로 가장 적절한 것은? 복잡한 것이 단순한 것보다 낫다단순한 것이 복잡한 것보다 낫다많은 방법이 하나의 방법보다 낫다암시적인 것이 명시적인 것보다 낫다\nR 언어가 통계 분석에 강점을 보이는 이유는? 웹 개발에 특화되어서게임 개발에 특화되어서통계학자들이 만든 언어이기 때문에시스템 프로그래밍에 특화되어서\nPython이 데이터 분석에 널리 사용되는 이유는? 무료이기 때문에쉽고 범용적인 문법과 풍부한 라이브러리실행 속도가 가장 빠르기 때문에메모리를 가장 적게 사용하기 때문에\n현대 데이터 분석에서 R과 Python의 관계는? R이 Python을 대체한다Python이 R을 대체한다각자의 장단점을 가지고 상호보완적으로 사용된다서로 호환되지 않는다"
-  },
-  {
-    "objectID": "pre_test2.html#제조업과-데이터-분석",
-    "href": "pre_test2.html#제조업과-데이터-분석",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 2",
-    "section": "제조업과 데이터 분석",
-    "text": "제조업과 데이터 분석\n\n\n스마트팩토리에서 데이터 분석이 중요한 이유는? 비용이 적게 들어서인력이 부족해서실시간 공정 최적화와 품질 향상을 위해서정부 규제 때문에\n제조 공정 데이터 분석의 주요 목적이 아닌 것은? 불량률 감소생산성 향상설비 예지 보전직원 평가\n데이터 기반 의사결정의 장점은? 항상 완벽한 결과비용 증가객관적 근거에 기반한 판단의사결정 시간 증가\n제조업의 디지털 전환(Digital Transformation)에서 가장 중요한 것은? 최신 설비 도입데이터 수집과 활용 체계 구축인력 감축해외 진출\n스마트팩토리 구현의 첫 단계로 가장 적절한 것은? AI 도입로봇 도입데이터 수집 체계 구축해외 기술 도입"
-  },
-  {
-    "objectID": "pre_test2.html#ai와-프롬프트-엔지니어링",
-    "href": "pre_test2.html#ai와-프롬프트-엔지니어링",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 2",
-    "section": "AI와 프롬프트 엔지니어링",
-    "text": "AI와 프롬프트 엔지니어링\n\n\n효과적인 프롬프트 작성법이 아닌 것은? 구체적인 요구사항 명시단계별 지시한번에 많은 것을 요구명확한 제약조건 제시\nAI에게 코드 변환을 요청할 때 가장 중요한 것은? 코드의 길이목적과 맥락의 명확한 설명실행 속도파일 크기\nAI와의 효과적인 소통 방법이 아닌 것은? 단계적 접근명확한 목표 제시모호한 표현 사용구체적 예시 제공\nAI를 활용한 코드 변환시 주의할 점은? 비용 문제시간 문제결과의 검증 필요성저작권 문제\n프롬프트 엔지니어링에서 가장 중요한 것은? 긴 문장 작성전문 용어 사용명확한 의도 전달복잡한 설명"
-  },
-  {
-    "objectID": "pre_test2.html#도메인-지식과-ai-활용",
-    "href": "pre_test2.html#도메인-지식과-ai-활용",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 2",
-    "section": "도메인 지식과 AI 활용",
-    "text": "도메인 지식과 AI 활용\n\n\n제조업 분석가에게 필요한 가장 중요한 역량은? 프로그래밍 실력통계 지식공정에 대한 도메인 지식영어 실력\nAI 시대에 연구원이 갖춰야 할 자질은? 빠른 타자 속도문제 해결 능력과 비판적 사고많은 암기력프로그래밍 언어 숙달\n데이터 분석가가 물리화학적 지식을 갖춰야 하는 이유는? 논문 작성을 위해해외 출장을 위해공정 메커니즘의 이해를 위해팀원과의 소통을 위해\nAI 도구 활용에서 가장 중요한 것은? 빠른 실행많은 시도적절한 문제 정의와 해석자동화\n데이터 분석 결과 해석에서 중요한 것은? 화려한 시각화복잡한 모델 사용공정 지식을 바탕으로 한 통찰빠른 처리 속도"
-  },
-  {
-    "objectID": "pre_test2.html#미래-산업과-역량",
-    "href": "pre_test2.html#미래-산업과-역량",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 2",
-    "section": "미래 산업과 역량",
-    "text": "미래 산업과 역량\n\n\n미래 제조업에서 AI의 역할은? 인력 대체의사결정 지원 도구완전 자동화비용 절감\n연구원이 AI를 활용할 때 가장 중요한 태도는? 무조건적 수용기술 거부비판적 검증과 활용의존적 태도\n스마트팩토리에서 데이터 사이언티스트의 역할은? 단순 데이터 입력데이터 기반 공정 최적화설비 수리인력 관리\nAI 시대에 더욱 중요해지는 것은? 암기력타자 속도창의적 문제 해결력반복 작업 능력\n데이터 분석가의 성장에 가장 중요한 것은? 많은 야근고가의 장비지속적인 학습과 호기심빠른 작업 속도"
-  },
-  {
-    "objectID": "pre_test2.html#실무-응용",
-    "href": "pre_test2.html#실무-응용",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 2",
-    "section": "실무 응용",
-    "text": "실무 응용\n\n\n공정 데이터 분석 시작 단계로 적절한 것은? AI 모델 개발보고서 작성공정 흐름 이해프로그램 코딩\n분석 결과의 실무 적용시 중요한 것은? 화려한 시각화복잡한 수식현장 적용 가능성빠른 처리\n데이터 기반 공정 개선의 성공 요인은? 최신 AI 사용고가 장비 도입현장과 데이터의 균형적 이해완전 자동화\n제조업에서 AI 활용의 현실적인 목표는? 모든 공정 자동화인력 완전 대체인간과 AI의 협력적 의사결정비용 절감\n데이터 분석 프로젝트의 성공 요인은? 최신 기술 도입많은 예산명확한 문제 정의와 해결 방안빠른 실행"
-  },
-  {
-    "objectID": "pre_test2.html#힌트와-해설",
-    "href": "pre_test2.html#힌트와-해설",
-    "title": "제조업의 데이터 분석과 AI 활용 사전테스트 2",
-    "section": "힌트와 해설",
-    "text": "힌트와 해설\n\n\n프로그래밍 언어 힌트\n\n\nR은 통계 분석을 위해 만들어진 언어입니다\nPython은 읽기 쉽고 배우기 쉬운 문법을 가진 언어입니다\n두 언어는 각각의 장단점이 있습니다\n\n\n\n\n제조업과 데이터 분석 힌트\n\n\n스마트팩토리는 데이터 기반 의사결정을 핵심으로 합니다\n공정 최적화와 품질 향상이 주요 목적입니다\n디지털 전환은 단순 자동화 이상의 의미를 가집니다\n\n\n\n\nAI와 프롬프트 힌트\n\n\n프롬프트는 AI와의 효과적인 소통 도구입니다\n명확하고 구체적인 지시가 중요합니다\n결과는 항상 검증이 필요합니다\n\n\n\n\n도메인 지식 힌트\n\n\n도메인 지식은 데이터 해석의 기초입니다\nAI는 도구일 뿐, 판단은 전문가의 몫입니다\n물리화학적 지식은 공정 이해의 기초가 됩니다\n\n\n\n\n미래 산업 힌트\n\n\nAI는 인간을 대체하는 것이 아닌 보조 도구입니다\n창의적 문제 해결 능력이 더욱 중요해집니다\n지속적 학습이 핵심 경쟁력입니다\n\n\n\n\n실무 응용 힌트\n\n\n현장 이해가 데이터 분석의 기초입니다\n실용적인 해결책이 중요합니다\n인간과 AI의 협력이 핵심입니다"
-  },
-  {
-    "objectID": "index.html#과정-소개",
-    "href": "index.html#과정-소개",
-    "title": "디스플레이 공정 데이터 분석 과정",
-    "section": "",
-    "text": "이 과정은 디스플레이 제조 공정에서 발생하는 데이터를 분석하고 이를 통해 공정을 최적화하는 방법을 학습하는 과정입니다. R 프로그래밍을 기반으로 하며, 최신 AI 기술을 활용하여 더욱 효율적인 데이터 분석 방법을 익힐 수 있습니다.\n\n\n\n데이터 분석의 기초 개념 이해\nR 프로그래밍 실무 능력 향상\n디스플레이 공정 데이터 분석 실습\nAI 활용 데이터 분석 기법 습득\n\n\n\n\n\n\n\n통계의 기본 개념 이해\n데이터 시각화의 이해와 활용\n데이터 전처리 기법\n\n\n\n\n\nR과 RStudio 환경 설정\n데이터 불러오기와 처리\n다양한 시각화 도구 활용\n통계 분석 패키지 활용\n\n\n\n\n\n포토 공정 데이터 분석\n드라이 에칭 공정 분석\n스퍼터링 공정 분석\n공정 간 상관관계 분석\n\n\n\n\n\nAI 기반 코드 변환\n프롬프트 엔지니어링\nAI 활용 데이터 분석 자동화\nAI 윤리와 한계 이해"
-  },
-  {
-    "objectID": "index.html#사전-테스트-안내",
-    "href": "index.html#사전-테스트-안내",
-    "title": "디스플레이 공정 데이터 분석 과정",
-    "section": "사전 테스트 안내",
-    "text": "사전 테스트 안내\n본 과정을 시작하기 전에 수강생들의 기초 지식을 파악하고자 사전 테스트를 준비했습니다. 테스트는 총 3개의 섹션으로 구성되어 있습니다.\n\nPre-Test 1: 기초 통계와 AI 개념\n\n기본적인 통계 개념\n데이터 시각화 이해\nAI와 관련된 기초 지식\n\n\n\nPre-Test 2: R 프로그래밍 기초\n\nR, Python 기초 지식\nAI 관한 기초 지식\nAI를 통한 공정 데이터 분석 이해\n\n\n\nPre-Test 3: 디스플레이 공정 이해\n\nR의 tidyverse 패키지이해\n포토 공정의 이해\n에칭 공정의 이해\n스퍼터링 공정의 이해"
-  },
-  {
-    "objectID": "index.html#학습-안내",
-    "href": "index.html#학습-안내",
-    "title": "디스플레이 공정 데이터 분석 과정",
-    "section": "학습 안내",
-    "text": "학습 안내\n\n\n\n\n\n\n효과적인 학습을 위한 조언\n\n\n\n\n사전 테스트는 평가의 목적이 아닌 학습 방향 설정을 위한 것입니다.\n모르는 문제가 있더라도 걱정하지 마세요. 과정을 통해 모든 내용을 학습할 수 있습니다.\n실습 위주의 학습이 진행되므로, 컴퓨터와 인터넷 환경을 미리 준비해주세요."
-  },
-  {
-    "objectID": "index.html#준비사항",
-    "href": "index.html#준비사항",
-    "title": "디스플레이 공정 데이터 분석 과정",
-    "section": "준비사항",
-    "text": "준비사항\n\n필수 소프트웨어 설치\n\nR 최신 버전\nRStudio 데스크톱 버전\nGit (선택사항)\n\n추천 학습 자료\n\nR for Data Science 온라인 무료 서적\n디스플레이 공학 개론KOCW\n\n\n\n\n수강 전 확인사항\n\n\nR과 RStudio가 정상적으로 설치되었는지 확인\n인터넷 브라우저는 최신 버전을 사용\n기본적인 컴퓨터 사용법 숙지\n학습을 위한 충분한 시간 확보"
-  },
-  {
-    "objectID": "index.html#과정-특징",
-    "href": "index.html#과정-특징",
-    "title": "디스플레이 공정 데이터 분석 과정",
-    "section": "과정 특징",
-    "text": "과정 특징\n\n실무 중심 교육\n\n실제 공정 데이터 활용\n현장에서 발생하는 문제 해결\n실무자들의 경험 공유\n\nR을 이용한 데이터 분석\n\n데이터 전처리 방법\n다양한 시각화 방법\nAI를 이용한 코딩 및 문서화\n\n맞춤형 학습\n\n수강생의 수준에 따른 맞춤 지도\n단계별 심화 학습 가능\n실시간 질의응답 지원"
-  },
-  {
-    "objectID": "index.html#강의-일정",
-    "href": "index.html#강의-일정",
-    "title": "디스플레이 공정 데이터 분석 과정",
-    "section": "강의 일정",
-    "text": "강의 일정\n\n\n\n\n\n\n\n\n주차\n주제\n실습 내용\n\n\n\n\n1-3\nR 기본 문법\n데이터 처리, 데이터 시각화\n\n\n4-5\n통계적 데이터 분석\n고급 시각호, 통계 분석\n\n\n6-9\n공정 데이터 분석\n포토,드라이,스퍼터 공정 분석, 보고서 작성 배포"
+    "text": "힌트와 해설\n\n\n기초 난이도 문제 힌트\n\n\nOLED는 발광층에서 전자와 정공의 재결합으로 빛이 발생합니다\n진공도는 Pa 단위로 표시됩니다\nOLED 발광 재료는 형광과 인광이 대표적입니다\n클린룸은 Class로 청정도를 나타냅니다\n산소와 수분은 OLED 소자의 열화를 촉진합니다\n\n\n\n\n중급 난이도 문제 힌트\n\n\nPR 두께는 여러 공정 변수의 영향을 받습니다\n스퍼터링 증착률은 공정 변수와 관련이 있습니다\nOLED 수율은 여러 요인의 영향을 받습니다\n각 층은 고유한 기능을 가집니다\n\n\n\n\n고급 난이도 문제 힌트\n\n\n유기물 증착은 공정 조건의 영향을 많이 받습니다\n이방성 식각은 특정 방향으로의 식각을 의미합니다\n호스트 재료는 여러 특성이 요구됩니다\n외부양자효율은 여러 요소의 곱으로 결정됩니다\n\n\n\n\n디스플레이 산업 힌트\n\n\nOLED는 모바일 기기에서 강점이 있습니다\nOLED는 자체발광 특성이 있습니다\n신뢰성 평가는 표준화된 항목이 있습니다\n차세대 디스플레이는 계속 발전하고 있습니다\n\n\n\n\n공정 데이터 분석 힌트\n\n\n통계적 방법으로 이상치를 판단합니다\n그래프는 목적에 맞게 선택해야 합니다\n공정능력지수는 공정의 안정성을 나타냅니다\n실험계획은 체계적으로 수행해야 합니다"
   }
 ]

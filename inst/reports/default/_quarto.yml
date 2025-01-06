@@ -7,12 +7,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: pre_test.qmd
-        text: Pre-Test1
-      - href: pre_test2.qmd
-        text: Pre-Test2
-      - href: pre_test3.qmd
-        text: Pre-Test3
+  
 
 format: 
   html:
